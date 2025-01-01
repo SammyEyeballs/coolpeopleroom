@@ -1,0 +1,119 @@
+body {
+  background-color: rgb(230,230,230);
+  color: black;
+  font-family: Lucida Grande, sans-serif;
+  font-size: 13px;
+}
+
+.navtab {
+  font-weight: normal;
+  text-decoration: none;
+  background: rgb(153, 153, 153);
+  padding: 0px 10px 1px; 
+  border-left: 1px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  box-shadow: 1px 0px #666666;
+  /* - https://stackoverflow.com/questions/73429024/how-can-i-do-a-rectangle-octagon-with-full-border#73429505
+  - https://drafts.csswg.org/css-shapes-1/#shapes-from-box-values */
+  clip-path: border-box polygon(0 6.00px,6.00px 0,100% 0,100% 100%,0 100%);
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:visited:hover {
+  color: purple;
+}
+
+/* Scrollbar stuffs; I wish to give credit where credit is due. See the following and maybe you can make your own scrollbar, too:
+- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar2
+- https://almaer.com/scrollbar/debug.html and https://stackoverflow.com/questions/9060421/css3-how-to-restore-webkit-scrollbar-property-to-the-default-scroll-bar/72511916#72511916 
+- https://stackoverflow.com/questions/47576815/how-to-add-arrows-with-webkit-scrollbar-button/66050759#66050759 
+- This _awesome_, super-specific scrollbar debugger: https://almaer.com/scrollbar/debug.html
+- Also nice: https://css-tricks.com/custom-scrollbars-in-webkit/ 
+*/
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width:14px;
+}
+
+/* Debugging - if anything's red, there's an issue somewhere*/
+::-webkit-scrollbar-button:vertical {
+    background-color: red;
+    border: 2px dashed blue;
+}
+
+/* Top and bottom buttons */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display:block;
+}
+
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+/* Bottom scroll button ("down") */
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 8px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><polygon points='50,85 0,25 100,25'/></svg>");
+}
+
+/* Top scroll button ("up") */
+::-webkit-scrollbar-button:vertical:decrement {
+  background-color: rgb(221, 221, 221);
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 8px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><polygon points='50,30 0,90 100,90'/></svg>");
+}
+
+/* Left */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    height: 12px;
+    width: 12px;
+    background-position: 3px 3px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,50 50,100 50,0'/></svg>");
+
+}
+
+::-webkit-scrollbar-button {
+  display:block;
+  background-color:ButtonFace;
+  height: 14px;
+  width: initial;
+  background-position: center;
+  background-size:10px 10px;
+  image-rendering: pixelated;
+  background-repeat:no-repeat;
+}
+
+/* Track  */
+::-webkit-scrollbar-track {
+    background-color: rgb(204, 204, 204);
+    border: inset 1px rgb(178, 178, 178);
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgb(65, 65, 65), rgb(130, 130, 130), rgb(30, 30, 30), rgb(1, 1, 1));
+  border-radius: 10px;
+}
+/* Corner */
+::-webkit-scrollbar-corner {
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 8px;
+  background-position: 3px 3px;
+  background-color:ButtonFace
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><polygon points='0,50 50,0 100,50 50,100'/></svg>");
+}

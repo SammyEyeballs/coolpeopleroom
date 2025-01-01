@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool People Room /changelog</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <div class="navbox">
+    <nav class="navtab">
+      <a class="tab inactivetab" href="index.html">index</a>
+      <a class="tab inactivetab" href="quotes.html">quotes</a>
+      <a class="tab inactivetab" href="fun-stuff.html">fun stuff</a>
+      <a class="tab activetab" href="changelog.html">changelog</a>
+    </nav>
+    <p><strong>Cool People Room /changelog</strong></p>
+    <hr>
+  </div>
+  <body>
+    <ul><h2>To-do:</h2>
+      <li>Add my email on bottom somewhere so there's webmaster contact on each page in case something's gone wrong.
+        <ul>-- site version as well</ul>
+      </li>
+      <li>Start filling out the pages, there's probably enough CSS in place for now.</li>
+      <li>Index should become the new room message, as that's sorta the whole point of this site.</li>
+      <li>Fix V0.4's changelog bullets..? I know there's a way to do the indentation correctly, I did it by accident on this page once already.</li>
+      <li>Make this site more accessibility friendly. Probably optimizations to be made all over the place.</li>
+      <li>Replace all the rgb()'s with #HEXDEC because <3 #HEXDEC, and rgb()'s are kinda clunky. Win-win.</li>
+      <li>Add CGoban background image on the startup window somewhere because I feel like maybe it's iconic or something.</li>
+    </ul>
+  <br>
+    <ul><h2>Changelog:</h2>
+      <li><h4>20th December 2022:</h4>
+        <ul><h4>Version 0.5</h4>
+          <li>Tabs now appear actually unified to the body of the page, they're practically (for all intents and purposes) pixel-perfect compared to the CGoban client, and it turns out I was (as usual) overthinking it. They're hacked together using :before and :after selectors on the .tab, .activetab, and .inactivetab classes, but never mind that, it doesn't seem to be broken right now, so that means it's probably fine and definitely scaleable. Nothing to worry about.</li>
+          <li>There's little subtitles under the tabs now. This may or may not stick, I haven't decided if it's a nice touch or totally redundant and unnecessary yet.</li>
+          <li>Scrapped the &quot;message board&quot; idea. Actually a misnomer, the message board tab was going to be for the room message, just expanded. That was one of the sparks of inspiration for this website; the KGS 1,000 character limit on room messages annoyed me. But now that this website is actually running… it feels redundant to have a room message if we can just have a merry time with the tabs and add as many pages as we like.</li>
+          <li>and yes I know, the font looks funny for non-macOS users, I am looking into it, there may yet be a solution in the future. Might try to pull this <a href="https://css-tricks.com/snippets/css/system-font-stack/">&quot;system-ui&quot;</a> thing off and see if that works… maybe…</li>
+          <li>I learned the font size default on CGoban is actually 12, and I actually cannot stand that, so for the site, I've pumped it up to 14px. Small enough that it still looks pretty similar to the client, but bigger, because readability</li>
+        </ul>
+      </li>
+      <li><h4>19th December 2022</h4>
+        <ul><h4>Version 0.4</h4>
+          <li>Lots of CSS changes to try to match the CGoban client for KGS.
+            <ul>-- Custom scrollbar (fun) and scroll buttons (pain).</ul>
+            <ul>-- Font change - Lucida Grande, because that's the default font the Java Swing UI framework that CGoban runs on uses when on macOS. Windows and Linux users, I don't know how to match the font on a website to the default font… yet… *crosses fingers*. Also, links are black and bold, like CGoban, but for practicality's sake, they change color like you'd expect when you hover over them.</ul>
+            <ul>-- Obviously you've probably noticed the green pattern and tabs up top; the green was easy, the tabs weren't too bad, but I would like to move them closer together, and believe it or not, that's the hardest thing so far…</ul>
+            <ul>-- Added a message board page; this is empty, but will become the new message board for the room later.</ul>
+          </li>
+        </ul>
+      </li>
+      <li><h4>17th December 2022</h4>
+        <ul><h4>Version 0.3</h4>
+          <li>Added fun stuffs (this is probably going to be one of the more substantial areas on the site, along with quotes, in the future)</li>
+          <li>Set font to Monaco, because I like it. Maybe not quite suitable for this site, though…</li>
+          <li>Page is the same grey as CGoban chat pane now</li>
+        </ul>
+      </li>
+      <li><h4>16th December 2022</h4>
+        <ul><h4>Version 0.2</h4>
+          <li>I am not sure what the difference between 0.1 and 0.2 is, I just checked, I can't spot the difference. It may have been a mistake, but I'm too far now (0.5 as of this writing) to feel like redoing all the version numbers and such. So that's that.</li>
+        </ul>
+      </li>
+      <li><h4>15th December 2022</h4>
+        <ul><h4>Version 0.1</h4>
+          <li>Wrote a very basic description. Font's Courier New. Put a link to KGS in there. The beginning…</li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+  </body>
+</html>

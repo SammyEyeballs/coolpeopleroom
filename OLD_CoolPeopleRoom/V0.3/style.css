@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(230,230,230);
+  color: black;
+  font-family: monaco, monospace;
+  font-size: 13px;
+}
+
+ul {
+  font-size: 16px;
+}
